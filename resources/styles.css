@@ -3,16 +3,49 @@
 }
 
 #basicCommand {
-  x: 10%;
-  y: 10%;
+  x: 5%;
+  y: 5%;
+  fill: white;
+}
+
+#basicMessage {
+  x: 5%;
+  y: 15%;
+  fill: white;
+}
+
+#bytesFree {
+  x: 5%;
+  y: 25%; 
+  fill: white;
+}
+
+#getTimeMethod {
+  x: 5%;
+  y: 35%; 
   fill: white;
 }
 
 #timeLabel {
-  /* font-size: 16; */
-  /* font-family: 'Roboto Mono', monospace; */
-  x: 10%;
-  y: 20%;
+  x: 5%;
+  y: 40%;
   fill: white;
 }
 
+#getDateMethod {
+  x: 5%;
+  y: 45%;
+  fill: white;
+}
+
+#printDate {
+  x: 5%;
+  y: 50%;
+  fill: white;
+}
+
+#dateLabel {
+  x: 5%;
+  y: 55%;
+  fill: white;
+}

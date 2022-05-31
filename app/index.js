@@ -28,6 +28,41 @@ const basicCommand = new FitFont({
 
 basicCommand.text = "A> BASIC.COM";
 
+const basicMessage = new FitFont({ 
+  id:'basicMessage',               // id of your symbol in the index.gui, you can also give an element object e.g. id: document.getElementById('foo')
+  font:'Roboto_Mono_16', // name of the generated font folder
+})
+
+basicMessage.text = "Mallard-80 BASIC with Jetsam";
+
+const bytesFree = new FitFont({ 
+  id:'bytesFree',               // id of your symbol in the index.gui, you can also give an element object e.g. id: document.getElementById('foo')
+  font:'Roboto_Mono_16', // name of the generated font folder
+})
+
+bytesFree.text = "31042 free bytes";
+
+const getTimeMethod = new FitFont({ 
+  id:'getTimeMethod',               // id of your symbol in the index.gui, you can also give an element object e.g. id: document.getElementById('foo')
+  font:'Roboto_Mono_16', // name of the generated font folder
+})
+
+getTimeMethod.text = "CALL get.time(hour%, min%)";
+
+
+const getDateMethod = new FitFont({ 
+  id:'getDateMethod',               // id of your symbol in the index.gui, you can also give an element object e.g. id: document.getElementById('foo')
+  font:'Roboto_Mono_16', // name of the generated font folder
+})
+
+getDateMethod.text = "CALL get.time(dd%,mm%,yyyy%)";
+
+
+
+const dateLabel = new FitFont({ 
+  id:'dateLabel',               // id of your symbol in the index.gui, you can also give an element object e.g. id: document.getElementById('foo')
+  font:'Roboto_Mono_16', // name of the generated font folder
+})
 // Update the <text> element every tick with the current time
 clock.ontick = (evt) => {
   let today = evt.date;
@@ -41,4 +76,11 @@ clock.ontick = (evt) => {
   }
   let mins = util.zeroPad(today.getMinutes());
   timeLabel.text = `${hours}:${mins}`;
+
+  const dd = util.zeroPad(today.getDay());
+  const mm = util.zeroPad(today.getMonth());
+  const yyyy = today.getFullYear();
+  dateLabel.text = `${dd}/${mm}/${yyyy}`;
+
+
 }
