@@ -50,6 +50,13 @@ const getTimeMethod = new FitFont({
 getTimeMethod.text = "CALL get.time(hour%, min%)";
 
 
+const printTime = new FitFont({ 
+  id:'printTime',               // id of your symbol in the index.gui, you can also give an element object e.g. id: document.getElementById('foo')
+  font:'Roboto_Mono_16', // name of the generated font folder
+})
+
+printTime.text = `PRINT USING "##:##"`;
+
 const getDateMethod = new FitFont({ 
   id:'getDateMethod',               // id of your symbol in the index.gui, you can also give an element object e.g. id: document.getElementById('foo')
   font:'Roboto_Mono_16', // name of the generated font folder
@@ -57,7 +64,12 @@ const getDateMethod = new FitFont({
 
 getDateMethod.text = "CALL get.time(dd%,mm%,yyyy%)";
 
+const printDate = new FitFont({ 
+  id:'printDate',               // id of your symbol in the index.gui, you can also give an element object e.g. id: document.getElementById('foo')
+  font:'Roboto_Mono_16', // name of the generated font folder
+})
 
+printDate.text = `PRINT USING "##/##/####"`;
 
 const dateLabel = new FitFont({ 
   id:'dateLabel',               // id of your symbol in the index.gui, you can also give an element object e.g. id: document.getElementById('foo')

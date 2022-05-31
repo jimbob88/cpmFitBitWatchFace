@@ -97,6 +97,28 @@
     <use href="#fitfont-char"/>
   </use>
 
+  <use href="#fitfont" id="printTime">
+    <use href="#fitfont-char"/>
+    <use href="#fitfont-char"/>
+    <use href="#fitfont-char"/>
+    <use href="#fitfont-char"/>
+    <use href="#fitfont-char"/>
+    <use href="#fitfont-char"/>
+    <use href="#fitfont-char"/>
+    <use href="#fitfont-char"/>
+    <use href="#fitfont-char"/>
+    <use href="#fitfont-char"/>
+    <use href="#fitfont-char"/>
+    <use href="#fitfont-char"/>
+    <use href="#fitfont-char"/>
+    <use href="#fitfont-char"/>
+    <use href="#fitfont-char"/>
+    <use href="#fitfont-char"/>
+    <use href="#fitfont-char"/>
+    <use href="#fitfont-char"/>
+    <use href="#fitfont-char"/>
+  </use>
+
   <!-- HH:MM -->
   <use href="#fitfont" id="timeLabel">
         <use href="#fitfont-char"/>
@@ -143,6 +165,7 @@
     <use href="#fitfont-char"/>
   </use>
 
+  <!-- PRINT USING "##/##/####" -->
   <use href="#fitfont" id="printDate">
     <use href="#fitfont-char"/>
     <use href="#fitfont-char"/>

@@ -26,26 +26,32 @@
   fill: white;
 }
 
-#timeLabel {
+#printTime {
   x: 5%;
-  y: 40%;
+  y: 40%; 
   fill: white;
 }
 
-#getDateMethod {
+#timeLabel {
   x: 5%;
   y: 45%;
   fill: white;
 }
 
+#getDateMethod {
+  x: 5%;
+  y: 55%;
+  fill: white;
+}
+
 #printDate {
   x: 5%;
-  y: 50%;
+  y: 60%;
   fill: white;
 }
 
 #dateLabel {
   x: 5%;
-  y: 55%;
+  y: 65%;
   fill: white;
 }
