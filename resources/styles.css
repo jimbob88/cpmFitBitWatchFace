@@ -55,3 +55,21 @@
   y: 65%;
   fill: white;
 }
+
+#defFoot {
+  x: 5%;
+  y: 75%;
+  fill: white;
+}
+
+#printFoot {
+  x: 5%;
+  y: 80%;
+  fill: white;
+}
+
+#footstepsNum {
+  x: 5%;
+  y: 85%;
+  fill: white;
+}

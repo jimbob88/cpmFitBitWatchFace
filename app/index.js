@@ -75,7 +75,27 @@ const dateLabel = new FitFont({
   id:'dateLabel',               // id of your symbol in the index.gui, you can also give an element object e.g. id: document.getElementById('foo')
   font:'Roboto_Mono_16', // name of the generated font folder
 })
-// Update the <text> element every tick with the current time
+
+const defFoot = new FitFont({ 
+  id:'defFoot',               // id of your symbol in the index.gui, you can also give an element object e.g. id: document.getElementById('foo')
+  font:'Roboto_Mono_16', // name of the generated font folder
+})
+defFoot.text = `DEF FOOT0=HIMEM+1`;
+
+const printFoot = new FitFont({ 
+  id:'printFoot',               // id of your symbol in the index.gui, you can also give an element object e.g. id: document.getElementById('foo')
+  font:'Roboto_Mono_16', // name of the generated font folder
+})
+printFoot.text = `PRINT FOOT0(now%)`;
+
+
+const footstepsNum = new FitFont({ 
+  id:'footstepsNum',               // id of your symbol in the index.gui, you can also give an element object e.g. id: document.getElementById('foo')
+  font:'Roboto_Mono_16', // name of the generated font folder
+})
+
+
+// Update the FitFont elements every tick with the current time
 clock.ontick = (evt) => {
   let today = evt.date;
   let hours = today.getHours();
@@ -93,6 +113,8 @@ clock.ontick = (evt) => {
   const mm = util.zeroPad(today.getMonth());
   const yyyy = today.getFullYear();
   dateLabel.text = `${dd}/${mm}/${yyyy}`;
+
+  footstepsNum.text = `${today.steps}`;
 
 
 }
