@@ -2,10 +2,17 @@
   viewport-fill: black;
 }
 
-#myLabel {
-  font-size: 16;
-  font-family: 'Roboto Mono', monospace;
+#basicCommand {
   x: 10%;
   y: 10%;
   fill: white;
 }
+
+#timeLabel {
+  /* font-size: 16; */
+  /* font-family: 'Roboto Mono', monospace; */
+  x: 10%;
+  y: 20%;
+  fill: white;
+}
+

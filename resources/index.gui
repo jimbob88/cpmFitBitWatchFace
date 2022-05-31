@@ -1,7 +1,27 @@
- <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet"> 
-  
 <svg class="background">
-  <text id="myLabel" />
+
+  <use href="#fitfont" id="basicCommand">
+    <use href="#fitfont-char"/>
+    <use href="#fitfont-char"/>
+    <use href="#fitfont-char"/>
+    <use href="#fitfont-char"/>
+    <use href="#fitfont-char"/>
+    <use href="#fitfont-char"/>
+    <use href="#fitfont-char"/>
+    <use href="#fitfont-char"/>
+    <use href="#fitfont-char"/>
+    <use href="#fitfont-char"/>
+    <use href="#fitfont-char"/>
+    <use href="#fitfont-char"/>
+  </use>
+
+  <use href="#fitfont" id="timeLabel">
+        <use href="#fitfont-char"/>
+        <use href="#fitfont-char"/>
+        <use href="#fitfont-char"/>
+        <use href="#fitfont-char"/>
+        <use href="#fitfont-char"/>
+        <use href="#fitfont-char"/>
+        <!-- add as many characters as needed -->
+  </use>
 </svg>

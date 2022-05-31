@@ -2,3 +2,6 @@ build
 node_modules
 package-lock.json
 yarn.lock
+generate.py
+static/
+resources/Roboto_Mono_16
