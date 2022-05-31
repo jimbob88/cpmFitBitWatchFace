@@ -1,3 +1,7 @@
+# CP/M FitBit Watch Face
+
+![Watch face Example](https://i.imgur.com/594uCEp.png)
+
 ## Compilation
 - Grab a copy of [Roboto Mono](https://fonts.google.com/specimen/Roboto+Mono?query=mono#standard-styles) (RobotoMono-Medium.ttf)
 - Grab a copy of [generate.py](https://github.com/gregoiresage/fitfont)
