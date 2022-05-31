@@ -1,0 +1,11 @@
+.background {
+  viewport-fill: black;
+}
+
+#myLabel {
+  font-size: 16;
+  font-family: 'Roboto Mono', monospace;
+  x: 10%;
+  y: 10%;
+  fill: white;
+}
