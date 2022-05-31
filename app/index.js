@@ -1,8 +1,10 @@
 import clock from "clock";
 import * as document from "document";
+import { me as appbit } from "appbit";
 import { preferences } from "user-settings";
 import * as util from "../common/utils";
-import { FitFont } from 'fitfont'
+import { FitFont } from 'fitfont';
+import { today as t } from "user-activity";
 
 // Update the clock every minute
 clock.granularity = "minutes";
@@ -114,7 +116,11 @@ clock.ontick = (evt) => {
   const yyyy = today.getFullYear();
   dateLabel.text = `${dd}/${mm}/${yyyy}`;
 
-  footstepsNum.text = `${today.steps}`;
+  if (appbit.permissions.granted("access_activity")) {
+    footstepsNum.text = `${t.adjusted.steps}`;
+  } else {
+    footstepsNum.text = "I can't :(";
+  }
 
 
 }
